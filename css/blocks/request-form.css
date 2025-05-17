@@ -1,0 +1,27 @@
+.request-form__group {
+  margin: 0 0 40px;
+  padding: 0;
+  border: none;
+}
+
+.request-form__group-name {
+  margin: 0 0 60px 0;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.request-form__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 80px;
+  row-gap: 60px;
+}
+
+.request-form__group-name--short-indent {
+  margin: 0 0 42px 0;
+}
+
+.request-form__inner--short-indent {
+  row-gap: 42px;
+}

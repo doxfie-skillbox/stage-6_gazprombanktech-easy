@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  gap: 3px;
 }
 
 .custom-input__field {
@@ -17,4 +18,19 @@
 
 .custom-input__field::placeholder {
   color: #9B9B9B;
+}
+
+.custom-input__label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #1919EF;
+  user-select: none;
+}
+
+.custom-input__icon {
+  position: absolute;
+  right: 0;
+  bottom: 12px;
+  pointer-events: none;
 }

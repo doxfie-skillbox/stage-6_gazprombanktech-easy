@@ -75,10 +75,67 @@
             дальнейшей работы
           </p>
           <!-- Форма -->
-          <div class="custom-input">
-            <input class="custom-input__field" type="text" name="surname" placeholder="Фамилия*" aria-label="Фамилия"
-              required>
-          </div>
+          <form class="request-form" action="#" method="POST">
+            <!-- Расскажи о себе -->
+            <fieldset class="request-form__group">
+              <legend class="request-form__group-name request-form__group-name--short-indent">Расскажи о&nbsp;себе</legend>
+              <div class="request-form__inner request-form__inner--short-indent">
+                <div class="custom-input">
+                  <input class="custom-input__field" type="text" name="surname" placeholder="Фамилия*"
+                    aria-label="Фамилия" required>
+                </div>
+                <div class="custom-input">
+                  <label class="custom-input__label" for="email">Почта*</label>
+                  <input class="custom-input__field" type="email" name="email" id="email" placeholder="E-mail" required>
+                  <svg class="custom-input__icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-mail"></use>
+                  </svg>
+                </div>
+                <div class="custom-input">
+                  <input class="custom-input__field" type="text" name="name" placeholder="Имя*" aria-label="Имя"
+                    required>
+                </div>
+                <div class="custom-input">
+                  <label class="custom-input__label" for="bday">Дата рождения*</label>
+                  <input class="custom-input__field" type="text" name="bday" id="bday" placeholder="dd/mm/yyyy"
+                    required>
+                  <svg class="custom-input__icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-calendar"></use>
+                  </svg>
+                </div>
+                <div class="custom-input">
+                  <input class="custom-input__field" type="text" name="surname" placeholder="Отчество"
+                    aria-label="Отчество">
+                </div>
+                <div class="custom-input">
+                  <label class="custom-input__label" for="phone">Телефон*</label>
+                  <input class="custom-input__field" type="tel" name="phone" id="phone"
+                    placeholder="+7&nbsp;(ХХХ) ХХХ-ХХ-ХХ" required>
+                  <svg class="custom-input__icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-phone"></use>
+                  </svg>
+                </div>
+              </div>
+            </fieldset>
+            <!-- Расскажи о компании -->
+            <fieldset class="request-form__group">
+              <legend class="request-form__group-name">Расскажи о&nbsp;компании</legend>
+              <div class="request-form__inner">
+                <div class="custom-input">
+                  <input class="custom-input__field" type="text" name="company-name" placeholder="Название компании*"
+                    aria-label="Название компании" required>
+                </div>
+                <div class="custom-input">
+                  <input class="custom-input__field" type="url" name="company-website" placeholder="Сайт компании*"
+                    aria-label="Сайт компании" required>
+                </div>
+                <div class="custom-textarea">
+                  <textarea class="custom-textarea__field" name="company-description" aria-label="Описание компании"
+                    placeholder="Описание компании*" required></textarea>
+                </div>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </div>
     </section>
