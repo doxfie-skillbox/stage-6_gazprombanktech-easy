@@ -1,4 +1,5 @@
 .custom-textarea {
+  display: flex;
   grid-column: span 2;
 }
 

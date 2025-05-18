@@ -1,5 +1,5 @@
 .request {
-  padding: 76px 0 80px;
+  padding: 74px 0 80px;
 }
 
 .request__wrapper {
@@ -25,7 +25,7 @@
 
 .request__heading,
 .request__description {
-  margin: 0 0 60px;
+  margin: 0 0 61px;
 }
 
 .request__heading {

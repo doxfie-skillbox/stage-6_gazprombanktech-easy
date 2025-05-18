@@ -5,7 +5,7 @@
 }
 
 .request-form__group-name {
-  margin: 0 0 60px 0;
+  margin: 0 0 59px 0;
   font-weight: 300;
   font-size: 22px;
   line-height: 1.2;
@@ -18,10 +18,22 @@
   row-gap: 60px;
 }
 
+.request-form__inner-checkbox {
+  grid-template-columns: 1fr;
+  row-gap: 28px;
+}
+
 .request-form__group-name--short-indent {
   margin: 0 0 42px 0;
 }
 
 .request-form__inner--short-indent {
   row-gap: 42px;
+}
+
+.request-form__name-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 27px 0;
 }

@@ -34,3 +34,7 @@
   bottom: 12px;
   pointer-events: none;
 }
+
+.custom-input--flat {
+  grid-column: span 2;
+}

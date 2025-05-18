@@ -78,7 +78,8 @@
           <form class="request-form" action="#" method="POST">
             <!-- Расскажи о себе -->
             <fieldset class="request-form__group">
-              <legend class="request-form__group-name request-form__group-name--short-indent">Расскажи о&nbsp;себе</legend>
+              <legend class="request-form__group-name request-form__group-name--short-indent">Расскажи о&nbsp;себе
+              </legend>
               <div class="request-form__inner request-form__inner--short-indent">
                 <div class="custom-input">
                   <input class="custom-input__field" type="text" name="surname" placeholder="Фамилия*"
@@ -132,6 +133,300 @@
                 <div class="custom-textarea">
                   <textarea class="custom-textarea__field" name="company-description" aria-label="Описание компании"
                     placeholder="Описание компании*" required></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <!-- Добавь ссылку на презентацию проекта -->
+            <fieldset class="request-form__group">
+              <legend class="request-form__group-name">Добавь ссылку на&nbsp;презентацию проекта</legend>
+              <div class="request-form__inner">
+                <div class="custom-input custom-input--flat">
+                  <input class="custom-input__field" type="url" name="project-url" placeholder="Ссылка*"
+                    aria-label="Ссылка на презентацию проекта" required>
+                  <svg class="custom-input__icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-link"></use>
+                  </svg>
+                </div>
+              </div>
+            </fieldset>
+            <!-- Укажи направление работы твоего стартапа или проекта -->
+            <fieldset class="request-form__group">
+              <legend class="request-form__group-name request-form__name-checkbox">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-info"></use>
+                </svg>
+                <span class="request-form__group-name-text">Укажи направление работы твоего стартапа или проекта</span>
+              </legend>
+              <div class="request-form__inner request-form__inner-checkbox">
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="branch-services"
+                    name="branch-services">
+                  <label class="custom-checkbox__label" for="branch-services">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">Сервисы для отделений</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="document-management"
+                    name="document-management">
+                  <label class="custom-checkbox__label" for="document-management">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">Электронный документооборот</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="speech-technologies"
+                    name="speech-technologies">
+                  <label class="custom-checkbox__label" for="speech-technologies">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">Речевые технологии</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="client-communication-channels"
+                    name="client-communication-channels">
+                  <label class="custom-checkbox__label" for="client-communication-channels">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">Каналы взаимодействия с&nbsp;клиентами</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="biometrics"
+                    name="biometrics">
+                  <label class="custom-checkbox__label" for="biometrics">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">Идентификация и&nbsp;биометрия</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="investment-services"
+                    name="investment-services">
+                  <label class="custom-checkbox__label" for="investment-services">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">Сервисы для инвестиций и&nbsp;работы с&nbsp;инвест.портфелем</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="client-loyalty-optimization"
+                    name="client-loyalty-optimization">
+                  <label class="custom-checkbox__label" for="client-loyalty-optimization">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">Сервисы повышения лояльности и&nbsp;оптимизации клиентского пути</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="mortgage"
+                    name="mortgage">
+                  <label class="custom-checkbox__label" for="mortgage">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">Ипотека</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="cybersecurity"
+                    name="cybersecurity">
+                  <label class="custom-checkbox__label" for="cybersecurity">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">Антифрод и&nbsp;кибербезопасность</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="scoring-underwriting"
+                    name="scoring-underwriting">
+                  <label class="custom-checkbox__label" for="scoring-underwriting">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">Скоринг и&nbsp;андеррайтинг</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="hrtech"
+                    name="hrtech">
+                  <label class="custom-checkbox__label" for="hrtech">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">HrTech</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="edtech"
+                    name="edtech">
+                  <label class="custom-checkbox__label" for="edtech">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">EdTech</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="credit"
+                    name="credit">
+                  <label class="custom-checkbox__label" for="credit">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">Кредитование</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="auto-credit"
+                    name="auto-credit">
+                  <label class="custom-checkbox__label" for="auto-credit">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">Автокредитование</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="insurance"
+                    name="insurance">
+                  <label class="custom-checkbox__label" for="insurance">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">Страхование</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="client-data-enrichment"
+                    name="client-data-enrichment">
+                  <label class="custom-checkbox__label" for="client-data-enrichment">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">Обогащение данных о&nbsp;клиентах</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="crm"
+                    name="crm">
+                  <label class="custom-checkbox__label" for="crm">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">CRM</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="sme-services"
+                    name="sme-services">
+                  <label class="custom-checkbox__label" for="sme-services">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">Сервисы для малого и&nbsp;среднего бизнеса</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="pfm"
+                    name="pfm">
+                  <label class="custom-checkbox__label" for="pfm">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">PFM</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="legal-services"
+                    name="legal-services">
+                  <label class="custom-checkbox__label" for="legal-services">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">Юридический сервис</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="neobanking"
+                    name="neobanking">
+                  <label class="custom-checkbox__label" for="neobanking">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">Необанкинг</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="digital-marketing"
+                    name="digital-marketing">
+                  <label class="custom-checkbox__label" for="digital-marketing">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">Digital Marketing</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="churn-management"
+                    name="churn-management">
+                  <label class="custom-checkbox__label" for="churn-management">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">Сервисы по&nbsp;работе с&nbsp;оттоком клиентов</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="client-acquisition"
+                    name="client-acquisition">
+                  <label class="custom-checkbox__label" for="client-acquisition">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">Привлечение новых клиентов</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="helpdesk"
+                    name="helpdesk">
+                  <label class="custom-checkbox__label" for="helpdesk">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">Helpdesk</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="corporate-training"
+                    name="corporate-training">
+                  <label class="custom-checkbox__label" for="corporate-training">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">Корпоративное обучение</span>
+                  </label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="recruitment"
+                    name="recruitment">
+                  <label class="custom-checkbox__label" for="recruitment">
+                    <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="custom-checkbox__text">Найм</span>
+                  </label>
                 </div>
               </div>
             </fieldset>
