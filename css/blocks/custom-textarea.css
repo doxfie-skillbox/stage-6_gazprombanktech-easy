@@ -18,3 +18,7 @@
 .custom-textarea__field::placeholder {
   color: #9B9B9B;
 }
+
+.custom-textarea--message {
+  margin: 0 0 60px;
+}

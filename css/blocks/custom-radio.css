@@ -1,0 +1,27 @@
+.custom-radio {
+  display: flex;
+  height: 20px;
+  grid-column: span 2;
+  position: relative;
+}
+
+.custom-radio__field:checked+.custom-radio__label::before {
+  border: 6px solid #1919EF;
+}
+
+.custom-radio__label {
+  padding: 0 0 0 40px;
+  user-select: none;
+}
+
+.custom-radio__label::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ACB5BD;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}

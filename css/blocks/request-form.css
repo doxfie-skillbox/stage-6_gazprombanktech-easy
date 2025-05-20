@@ -1,6 +1,7 @@
 .request-form__group {
   margin: 0 0 40px;
   padding: 0;
+  position: relative;
   border: none;
 }
 
@@ -18,8 +19,18 @@
   row-gap: 60px;
 }
 
-.request-form__inner-checkbox {
-  grid-template-columns: 1fr;
+.request-form__name-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.request-form__btn {
+  margin: 80px auto 0;
+  padding: 11px 36px;
+}
+
+.request-form__inner--short-gap {
   row-gap: 28px;
 }
 
@@ -31,9 +42,6 @@
   row-gap: 42px;
 }
 
-.request-form__name-checkbox {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.request-form__group-name--small-indent {
   margin: 0 0 27px 0;
 }

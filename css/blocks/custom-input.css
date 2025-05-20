@@ -35,6 +35,10 @@
   pointer-events: none;
 }
 
-.custom-input--flat {
+.custom-input--one-line {
+  grid-column: span 1;
+}
+
+.custom-input--two-line {
   grid-column: span 2;
 }
